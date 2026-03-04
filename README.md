@@ -1,7 +1,3 @@
-# KubeSimplify
-KubeSimplify is a Python-based CLI tool that simplifies Kubernetes operations by providing clean pod summaries, automated diagnostics for failing workloads, and easy generation of deployment YAMLs, helping DevOps engineers debug and manage clusters more efficiently.
-# KubeSimplify
-
 **KubeSimplify** is a developer-friendly CLI tool designed to simplify everyday Kubernetes operations.
 It acts as a smart wrapper around `kubectl`, providing clean cluster insights, automated pod diagnostics, and simplified commands to make debugging and managing Kubernetes workloads easier.
 
