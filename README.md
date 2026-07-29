@@ -72,20 +72,31 @@ pip install -r requirements.txt
 
 ## ▶️ Usage
 
-Example command:
+```
+python main.py --help
+python main.py pods                    # Pod health table
+python main.py diagnose default nginx  # Diagnose pod
+python main.py generate myapp          # Generate YAML
+```
 
+Example `pods` output (Rich table):
 ```
-python main.py pods
+┌─ Pod Health Summary ───────────────────────────────┐
+│ Namespace │ Pod Name │ Status │ Restarts │
+├───────────┼──────────┼────────┼──────────┤
+│ default   │ nginx    │ Running│ 0        │
+└───────────┴──────────┴────────┴──────────┘
 ```
 
-Example output:
+---
 
-```
-Namespace     Pod Name          Status      Restarts
------------------------------------------------------
-default       nginx-abc123      Running     0
-kube-system   coredns-xyz       Running     0
-```
+## 📌 Roadmap
+
+* [x] Pod health summary
+* [x] Pod diagnostics engine
+* [x] YAML generator
+* [ ] Misconfiguration detection
+* [ ] AI-assisted troubleshooting
 
 ---
 
@@ -96,16 +107,6 @@ KubeSimplify aims to improve the developer experience when working with Kubernet
 * Simplifying debugging workflows
 * Reducing command complexity
 * Providing helpful diagnostics directly in the CLI
-
----
-
-## 📌 Roadmap
-
-* [ ] Pod health summary
-* [ ] Pod diagnostics engine
-* [ ] YAML generator
-* [ ] Misconfiguration detection
-* [ ] AI-assisted troubleshooting
 
 ---
 
